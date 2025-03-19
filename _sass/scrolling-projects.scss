@@ -70,28 +70,34 @@
     gap: 1rem; /* Reduce excessive space */
 }
 
-/* Reduce padding for mobile screens */
+/* Mobile-specific adjustments */
 @media screen and (max-width: 600px) {
     .recent-projects-container {
         padding-top: 10px;
         padding-left: 0;
         padding-right: 0;
+        overflow: hidden;
+    }
+
+    .home-project-scroller {
+        width: 100%;
     }
 
     .home-project-scroller-inner {
-        gap: 0.5rem; /* Reduce spacing further */
+        gap: 0.5rem; /* Reduce spacing for better fit */
+        justify-content: flex-start; /* Align projects to the left */
     }
 
     .home-project {
-        width: clamp(120px, 50vw, 200px); /* Adjust width for small screens */
+        width: clamp(100px, 50vw, 180px); /* Ensure proper scaling */
     }
 
     .home-project img {
-        max-height: 100px; /* Slightly smaller on small screens */
+        max-height: 100px; /* Slightly smaller for mobile */
     }
 
     .home-project-title {
-        font-size: 10px; /* Keep it readable */
+        font-size: 10px;
     }
 }
 
