@@ -1,0 +1,16 @@
+projects:
+  - title: "AI For Supporting Speech Therapy"
+    image: "/assets/images/publications/25_chi1.png"
+    url: "/projects/project1"
+
+  - title: "Fostering AI Literacy in Children"
+    image: "/assets/images/publications/24_dis.png"
+    url: "/projects/project2"
+
+  - title: "Improving Speech Recognition Accuracy"
+    image: "/assets/images/publications/Speech.png"
+    url: "/projects/project4"
+
+  - title: "Evaluating AI Reasoning"
+    image: "/assets/images/publications/AI Puzzler.png"
+    url: "/projects/project3"

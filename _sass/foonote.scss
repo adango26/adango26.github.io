@@ -1,0 +1,10 @@
+.padded-footer {
+    padding-top: 80px; /* Adjust padding as needed */
+}
+
+// Special size for author names
+.a {
+    &.size {
+      font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+    }
+  }

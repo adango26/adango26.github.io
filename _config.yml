@@ -1,0 +1,10 @@
+title: "Aayushi Dangol"
+description: "Aayushi Dangol's Website"
+baseurl: "" # Change if your site is hosted in a subdirectory
+url: "https://adango26.github.io/"
+
+# Enable collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/

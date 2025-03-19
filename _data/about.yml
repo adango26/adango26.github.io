@@ -1,0 +1,13 @@
+full_name: "Aayushi Dangol"
+profile_picture: "assets/images/profile.png"
+cv: "assets/pdf/cv.pdf"
+
+socials:
+  github: "adango26"
+  linkedin: "aayushi-dangol"
+  google_scholar: "https://scholar.google.com/citations?user=BRT9BREAAAAJ&hl=en&oi=ao"
+
+affiliations:
+  - title: "PhD Student"
+    name: "University of Washington"
+    email: "adango@uw.edu"

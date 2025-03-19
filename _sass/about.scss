@@ -1,0 +1,104 @@
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 30px; /* Adds space above image and name */
+    // padding-left: 10px;
+}
+
+.profile-text {
+    flex: 3; /* Gives text more space */
+    text-align: left;
+    max-width: 100%;
+}
+
+.profile-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Style for Social Icons */
+.profile-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; /* Uniform size */
+    height: 36px; /* Uniform size */
+    border-radius: 50%; /* Makes them circular */
+    background-color: #AA336A; /* Change this to match your theme */
+    color: white; /* Icon color */
+    font-size: 18px; /* Adjust size of the icon */
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-muted {
+    color: grey; /* or use #808080 for a specific shade of grey */
+}
+
+/* On hover: Slight color change */
+.profile-icons a:hover {
+    background-color: #8a2454; /* Darker shade */
+}
+
+.profile-image-container {
+    flex: 2;
+    max-width: 180px; /* Adjust image size */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures icons are centered under image */
+    text-align: center;
+    padding-top: 70px;
+}
+
+.rounded-circle {
+    width: 150px;  /* Adjust size as needed */
+    height: 150px; /* Ensure it's a perfect circle */
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover; /* Ensures the image is cropped properly */
+    display: block;
+}
+
+#profile_picture {
+    width: 100%;
+    height: auto;
+}
+
+.email {
+    margin-top: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Increased space between the email icon and text */
+    margin-top: 15px; /* Adds more space between the profile image and email */
+}
+
+/* Solid Filled Email Icon */
+.email-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AA336A; /* Sets the solid fill */
+}
+
+/* Email Text - Normal Styling */
+.email-text {
+    font-size: 14px;
+    color: #AA336A;
+    text-decoration: none;
+}
+
+.email-text:hover {
+    text-decoration: underline;
+}
+
+.ai {
+    font-size: 28px; /* Adjust size as needed */
+}

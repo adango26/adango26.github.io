@@ -1,0 +1,23 @@
+nav {
+  position: absolute;  // Fixes the navbar position
+  right: 20vw;       // Places it on the right with spacing
+  top: 5%;         // Centers it vertically
+  transform: translateY(-50%); // Adjusts for exact centering
+  display: flex;
+  align-items: flex-end;   // Aligns text to the right
+  font-family: 'Inter', sans-serif;
+
+  a {
+      text-decoration: none;
+      color: #071013;
+      font-weight: 300;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .current {
+      font-weight: bold;
+      text-decoration: underline;
+      color: #AA336A;
+  }
+}

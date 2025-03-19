@@ -1,0 +1,32 @@
+<div class="recent-projects-container">
+    <h3 class="recent-projects-title">Recent Projects</h3>
+  
+    <div class="home-project-scroller">
+      <div class="home-project-scroller-inner">
+        {% for project in site.data.scrolling-projects.projects %}
+          <!-- <a href="{{ project.url }}" class="home-project-container"> -->
+            <div class="home-project">
+              <img src="{{ project.image }}" alt="{{ project.title }}" class="home-project-image">
+              <div class="home-project-title">{{ project.title }}</div>
+            </div>
+          <!-- </a> -->
+        {% endfor %}
+        
+        <!-- Duplicate projects to create a seamless scroll -->
+        {% for project in site.data.scrolling-projects.projects %}
+          <!-- <a href="{{ project.url }}" class="home-project-container"> -->
+            <div class="home-project">
+              <img src="{{ project.image }}" alt="{{ project.title }}" class="home-project-image">
+              <div class="home-project-title">{{ project.title }}</div>
+            </div>
+          <!-- </a> -->
+        {% endfor %}
+      </div>
+    </div>
+  
+    <div class="view-all-container">
+      <a href="/publication.html" class="view-all-projects">View All Projects →</a>
+    </div>
+  </div>
+  
+  

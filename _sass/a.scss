@@ -1,0 +1,15 @@
+a {
+    color: #AA336A;
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFB6C1;
+}
+
+.view-all-container {
+    text-align: right;  /* Aligns the text to the right */
+    margin-top: 1.5rem; /* Adds spacing above */
+    width: 100%; /* Ensures it spans the full container */
+  }

@@ -1,0 +1,124 @@
+
+
+// Year header styling
+.publication-year {
+  font-size: 1.2rem; /* Slightly smaller */
+  font-weight: bold;
+  margin-top: 1rem; /* Reduce top margin */
+  margin-bottom: 0.2rem; /* Reduce space before entries */
+  color: #333;
+}
+
+// Each publication entry (adds a bottom border)
+.publication-entry {
+  display: flex; /* Make the entry flex-based */
+  align-items: center; /* Align items vertically */
+  gap: 45px; /* Space between image and text */
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd; /* Default border for separation */
+  margin-bottom: 0rem;
+}
+
+// Remove border-bottom for the last publication in each year
+.year-publications .publication-entry:last-of-type {
+  border-bottom: none !important;
+}
+
+
+
+// Container for text details
+.publication-details {
+  flex-grow: 1; /* Allows text to expand */
+  display: flex;
+  flex-direction: column;
+}
+
+// Title styling
+.publication-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+// Author list styling
+.publication-authors {
+  margin-top: -0.8rem; /* Reduce gap between title and authors */
+  font-size: 0.6rem;
+  font-weight: 300 !important;
+}
+
+// Venue styling
+.publication-venue {
+  margin-top: -0.8rem; /* Reduce space between authors and venue */
+  font-size: 0.75rem;
+  font-weight: 400 !important;
+  margin-bottom: -0.4rem;
+}
+
+// Year header styling with reduced bottom spacing
+.publication {
+  margin-top: 2rem; /* Reduce top margin */
+  margin-bottom: -1rem !important; /* Reduce bottom margin */
+}
+
+// Icon styling
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Style for Social Icons */
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; /* Uniform size */
+  height: 28px; /* Uniform size */
+  border-radius: 50%; /* Makes them circular */
+  background-color: #AA336A; /* Default background */
+  color: white; /* Default icon color */
+  font-size: 14px; /* Adjust size of the icon */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons a:hover {
+  background-color: #C44D88; /* Change to a lighter or darker shade */
+  transform: scale(1.1); /* Slight enlargement effect */
+  color: #fff; /* Ensure text color stays white */
+}
+
+// General container styling
+.publication-container {
+  gap: 50px;
+  padding-top: 50px; /* Adds space above image and name */
+}
+
+// Special size for author names
+.a {
+  &.special-size {
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
+  }
+}
+
+// Image styling for publication thumbnails
+.publication-image {
+  flex-shrink: 0; /* Prevents image from shrinking */
+  width: 140px; /* Increase width for better visibility */
+  height: 100px; /* Increase height proportionally */
+  overflow: hidden; /* Ensures clean edges */
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.publication-image img {
+  width: 100%; /* Ensure image fills the div */
+  height: 100%;
+  background-color: #fff; /* Adds contrast for transparent images */
+  padding: 5px; /* Adds some spacing around */
+}

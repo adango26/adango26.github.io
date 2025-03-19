@@ -1,0 +1,69 @@
+.recent-projects-container{
+    padding-top: 30px;
+}
+
+.home-project-container {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: clamp(150px, 18vw, 300px); /* Ensure images scale properly */
+  }
+  
+  .home-project img {
+    width: clamp(150px, 18vw, 300px); /* Ensure images scale properly */
+    height: 100%; /* Maintain aspect ratio */
+    max-height: 150px; /* Prevent excessive height */
+    object-fit: contain; /* Ensure full image is visible */
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .home-project-title {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+    color: #666;
+    line-height: 1.1;
+  }
+  
+  .home-project-scroller {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 8%, white 92%, transparent);
+    mask: linear-gradient(90deg, transparent, white 8%, white 92%, transparent);
+  }
+  
+  .home-project-scroller-inner {
+    padding-block: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .home-project-scroller .home-project-scroller-inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .home-project-scroller .home-project-scroller-inner:hover {
+    animation-play-state: paused;
+  }
+  
+  .home-project-scroller {
+    --_animation-direction: reverse;
+    --_animation-duration: 40s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% + 5rem));
+    }
+  }
+  
+  .home-project img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  }
+
+
+  

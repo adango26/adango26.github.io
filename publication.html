@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<div class="publication-container">
+  <h3>Publications</h3>
+
+  {% assign publications_by_year = site.publications | group_by: "year" | sort: "name" | reverse %}
+  
+  {% for year_group in publications_by_year %}
+    
+    <h3 class="publication compact-year">{{ year_group.name }}</h3> <!-- Year header -->
+    
+    <div class="year-publications"> <!-- New wrapper for styling -->
+      {% for publication in year_group.items %}
+        <div class="publication-entry">
+          <!-- Add image support -->
+          {% if publication.image %}
+            <div class="publication-image">
+              <img src="{{ publication.image | prepend: '/assets/images/publications/' | relative_url }}" alt="Publication image for {{ publication.title }}">
+            </div>
+          {% endif %}
+
+          <div class="publication-details">
+            <p class="publication-title">{{ publication.title }}</p>
+
+            <p class="publication-authors">
+              {% for author in publication.authors %}
+                {% assign author_data = site.data.people.people | where: "name", author | first %}
+                {% if author_data.website %}
+                  <a class="a special-size" href="{{ author_data.website }}">{{ author_data.name }}</a>{% unless forloop.last %}, {% endunless %}
+                {% else %}
+                  {{ author }}{% unless forloop.last %}, {% endunless %}
+                {% endif %}
+              {% endfor %}
+            </p>
+
+            <p class="publication-venue">{{ publication.venue }} {% if publication.note %}({{ publication.note }}){% endif %}</p>
+
+            <div class="icons">
+              {% if publication.project %}
+                <a href="{{ publication.project }}" target="_blank">
+                  <i data-feather="folder"></i>
+                </a>
+              {% endif %}
+              {% if publication.pdf %}
+                <a href="{{ publication.slug | prepend: '/assets/pdf/' | append: '.pdf' | relative_url }}" title="PDF">
+                  <i data-feather="file-text"></i>
+                </a>
+              {% endif %}
+              {% if publication.video %}
+                <a href="{{ publication.video | prepend: 'https://youtu.be/' }}" target="_blank" title="Video">
+                  <i data-feather="youtube"></i>
+                </a>
+              {% endif %}
+              {% if publication.slide %}
+                <a href="{{ publication.slide }}" target="_blank" title="Slide">
+                  <i data-feather="monitor"></i>
+                </a>
+              {% endif %}
+              {% if publication.bibtex %}
+                <a href="{{ publication.bibtex }}" target="_blank" class="publication-link" title="BibTeX">
+                  <i data-feather="book"></i>
+                </a>
+              {% endif %}
+            </div>
+          </div> <!-- Close .publication-details -->
+        </div> <!-- Close .publication-entry -->
+      {% endfor %}
+    </div> <!-- Close .year-publications -->
+
+  {% endfor %}
+</div>
+
+<script>
+  feather.replace(); // This initializes Feather icons dynamically
+</script>
