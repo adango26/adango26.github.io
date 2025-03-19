@@ -102,3 +102,44 @@
 .ai {
     font-size: 28px; /* Adjust size as needed */
 }
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-text {
+        text-align: center; /* Center text on mobile */
+        padding: 10px;
+    }
+
+    .introduction {
+        text-align: left; /* Avoid text justification for better readability */
+        padding: 10px;
+    }
+
+    .profile-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .profile-icons a {
+        font-size: 20px;
+    }
+
+    .email-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .email-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
