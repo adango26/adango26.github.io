@@ -3,8 +3,9 @@
 }
 
 .home-project-container {
-    flex: 0 0 auto; /* Prevent shrinking */
-    width: clamp(150px, 18vw, 300px); /* Ensure images scale properly */
+    // flex: 0 0 auto; /* Prevent shrinking */
+    width: clamp(200px, 50vw, 300px); /* Ensure images scale properly */
+    max-width: 100%;
   }
   
   .home-project img {
