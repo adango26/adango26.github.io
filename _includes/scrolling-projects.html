@@ -4,22 +4,22 @@
     <div class="home-project-scroller">
       <div class="home-project-scroller-inner">
         {% for project in site.data.scrolling-projects.projects %}
-<!--           <a href="{{ project.url }}" class="home-project-container"> -->
+          <!-- <a href="{{ project.url }}" class="home-project-container"> -->
             <div class="home-project">
               <img src="{{ project.image }}" alt="{{ project.title }}" class="home-project-image">
               <div class="home-project-title">{{ project.title }}</div>
             </div>
-<!--           </a> -->
+          <!-- </a> -->
         {% endfor %}
         
         <!-- Duplicate projects to create a seamless scroll -->
         {% for project in site.data.scrolling-projects.projects %}
-<!--          <a href="{{ project.url }}" class="home-project-container"> -->
+          <!-- <a href="{{ project.url }}" class="home-project-container"> -->
             <div class="home-project">
               <img src="{{ project.image }}" alt="{{ project.title }}" class="home-project-image">
               <div class="home-project-title">{{ project.title }}</div>
             </div>
-<!--           </a> -->
+          <!-- </a> -->
         {% endfor %}
       </div>
     </div>
