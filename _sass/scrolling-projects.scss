@@ -9,7 +9,7 @@
   
   .home-project img {
     width: clamp(150px, 18vw, 300px); /* Ensure images scale properly */
-    height: 100%; /* Maintain aspect ratio */
+    aspect-ratio: 4/3;
     max-height: 150px; /* Prevent excessive height */
     object-fit: contain; /* Ensure full image is visible */
     border-radius: 12px;
