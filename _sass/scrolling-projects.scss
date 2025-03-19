@@ -58,7 +58,13 @@
       transform: translate(calc(-50% + 5rem));
     }
   }
-  
+
+
+ @media (max-width: 768px) {
+    .view-all-container {
+        padding-bottom: 60px; /* Increase space below the link */
+    }
+}
 
 
   
