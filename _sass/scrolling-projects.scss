@@ -70,14 +70,29 @@
     gap: 1rem; /* Reduce excessive space */
 }
 
-@media (max-width: 768px) {
+/* Reduce padding for mobile screens */
+@media screen and (max-width: 600px) {
+    .recent-projects-container {
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .home-project-scroller-inner {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem; /* Reduce spacing */
+        gap: 0.5rem; /* Reduce spacing further */
+    }
+
+    .home-project {
+        width: clamp(120px, 50vw, 200px); /* Adjust width for small screens */
+    }
+
+    .home-project img {
+        max-height: 100px; /* Slightly smaller on small screens */
+    }
+
+    .home-project-title {
+        font-size: 10px; /* Keep it readable */
     }
 }
-
 
   
