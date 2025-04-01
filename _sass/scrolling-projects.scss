@@ -9,7 +9,8 @@
   
   .home-project img {
     width: clamp(150px, 18vw, 300px); /* Ensure images scale properly */
-    height: 100%; /* Maintain aspect ratio */
+    // height: 100%; /* Maintain aspect ratio */
+    aspect-ratio: 4/3;
     max-height: 150px; /* Prevent excessive height */
     object-fit: contain; /* Ensure full image is visible */
     border-radius: 12px;
@@ -58,12 +59,13 @@
       transform: translate(calc(-50% + 5rem));
     }
   }
-  
-  .home-project img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-  }
+
+  @media (max-width: 768px) {
+    .view-all-container {
+        padding-bottom: 60px; /* Increase space below the link */
+    }
+}
+
 
 
   

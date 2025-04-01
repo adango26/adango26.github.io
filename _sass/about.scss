@@ -88,17 +88,56 @@
     fill: #AA336A; /* Sets the solid fill */
 }
 
-/* Email Text - Normal Styling */
-.email-text {
-    font-size: 14px;
-    color: #AA336A;
-    text-decoration: none;
+@media (max-width: 768px) {
+    .profile-container {
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "name"
+            "affiliations"
+            "socials"
+            "intro"
+            "email"; /* Now email is at the bottom */
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        row-gap: 5px;
+    }
+
+    .profile-image-container {
+        grid-area: image;
+        max-width: 180px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    #full_name {
+        grid-area: name;
+        margin-top: 5px;
+    }
+
+    .affiliations {
+        grid-area: affiliations;
+        margin-bottom: 5px;
+    }
+
+    .profile-icons {
+        grid-area: socials;
+        margin-bottom: 5px;
+    }
+
+    .introduction {
+        grid-area: intro;
+        margin-bottom: 15px;
+    }
 }
 
-.email-text:hover {
-    text-decoration: underline;
+@media (max-width: 768px) {
+    .email-container {
+        display: none !important; /* Hides email on mobile */
+    }
 }
 
-.ai {
-    font-size: 28px; /* Adjust size as needed */
-}
+
+
+

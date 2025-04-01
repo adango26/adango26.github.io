@@ -2,17 +2,20 @@
   date: "Jan 13, 2025"
   description: "We’ve made <a href='/assets/papers/25_chi1.pdf'>preprints</a> available for our accepted papers on designing AI technologies to support parents in conducting speech therapy."
 
+- title: "🤞 Two Papers Conditionally Accepted to IDC 2025"
+  date: "March 25, 2025"
+  description: "One paper presents <a href='/assets/papers/25_idc1.pdf'> AI Puzzlers, </a> an interactive system based on the Abstraction and Reasoning Corpus (ARC) that helps children identify and analyze errors in generative AI. The other explores children's <a href='/assets/papers/25_idc2.pdf'> mental models of AI reasoning </a>."
+  
 - title: "📄 Paper Accepted to ISLS 2025"
-  date: "Oct 14, 2024"
-  description: "Thrilled to be sharing our research on developing an AI classification system for children with the learning sciences community."
+  date: "March 10, 2025"
+  description: "Thrilled to be sharing our research on <a href='/assets/papers/25_isls.pdf'> developing an AI classification system for children </a> with the learning sciences community."
 
 - title: "💜 UW News Feature: Teens & AI Bias"
   date: "Nov 21, 2024"
   description: "Our research on <a href='/assets/papers/24_aies2.pdf'>representation bias of teenagers</a> in large language models was featured in <a href='https://www.washington.edu/news/2025/01/21/teens-ai-chatgpt-bias/'>UW News</a> and GeekWire!"
 
-
-- title: "🧩 Poster Presentation at CERES Fall Intensive"
-  date: "Sep 2024"
-  description: "Presented a poster on making AI learning more engaging for children through interactive play."
+# - title: "🧩 Poster Presentation at CERES Fall Intensive"
+#   date: "Sep 2024"
+#   description: "Presented a poster on making AI learning more engaging for children through interactive play."
 
 

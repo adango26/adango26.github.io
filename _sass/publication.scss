@@ -122,3 +122,88 @@
   background-color: #fff; /* Adds contrast for transparent images */
   padding: 5px; /* Adds some spacing around */
 }
+
+
+@media (max-width: 768px) {
+  .publication-container {
+      padding: 20px; /* Reduce padding for better mobile fit */
+      padding-left: 0%;
+      padding-right: 0%;
+  }
+
+  /* Stack image & text in mobile view */
+  .publication-entry {
+      flex-direction: column; /* Stack image and text */
+      align-items: center; /* Center content */
+      text-align: center; /* Align text */
+      gap: 15px; /* Reduce space between items */
+      padding-bottom: 20px; /* Increase spacing between publications */
+  }
+
+  /* Ensure images don't take too much space */
+  .publication-image {
+      width: 80%; /* Scale image for mobile */
+      max-width: 250px; /* Prevent it from getting too big */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .publication-image img {
+      width: 100%;
+      height: auto;
+      max-height: 150px; /* Prevent excessively large images */
+      object-fit: contain;
+      border-radius: 10px;
+  }
+
+  /* Improve text readability */
+  .publication-details {
+      text-align: center;
+      padding: 0 10px; /* Add some padding */
+  }
+
+  /* Adjust font sizes for readability */
+  .publication-title {
+      font-size: 0.8rem; /* Increase title size slightly */
+      font-weight: 450 !important;
+  }
+
+  .publication-authors {
+      font-size: 0.8rem; /* Increase readability */
+      margin-top: 5px;
+  }
+
+  .publication-venue {
+      font-size: 0.75rem;
+      font-weight: 350;
+      margin-top: 5px;
+  }
+
+  /* Ensure icons are centered */
+  .icons {
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+  }
+
+  .icons a {
+      width: 36px; /* Increase touch area for mobile */
+      height: 36px;
+      font-size: 18px; /* Make icons more visible */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Add more spacing before each year */
+  .publication.compact-year {
+      padding-top: 20px; /* Increase spacing */
+      padding-bottom: 10px; /* Ensure space after year */
+      font-size: 1.2rem; /* Adjust font size if needed */
+      font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .publication-container h3:first-of-type {
+      display: none; /* Hides the first "Publications" header */
+  }
+}
