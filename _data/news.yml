@@ -1,29 +1,15 @@
 - title: "Featured in HCDE’s High Impact Research Series"
   date: "June 23, 2025"
-  description: "My research on children’s AI literacy was featured in <a href="https://www.hcde.washington.edu/news/hcde-impact/ai-puzzlers" target="_blank">UW HCDE’s Impact Research series</a>, highlighting how my work supports children in understanding and engaging with AI technologies."
+  description: 'My research on children’s AI literacy was featured in <a href="https://www.hcde.washington.edu/news/hcde-impact/ai-puzzlers" target="_blank">UW HCDE’s Impact Research series</a>, highlighting how my work supports children in understanding and engaging with AI technologies.'
 
 - title: "Upcoming Presentation at IDC 2025"
   date: "June 18, 2025"
-  description: "I’ll be presenting two papers at IDC 2025 in Reykjavík: one on <a href='/assets/pdf/25_idc1.pdf'>AI Puzzlers</a>, a system that helps children spot errors in generative AI, and another on children’s <a href='/assets/pdf/25_idc2.pdf'>mental models of AI reasoning</a>."
-  
+  description: 'I’ll be presenting two papers at IDC 2025 in Reykjavík: one on <a href="/assets/pdf/25_idc1.pdf">AI Puzzlers</a>, a system that helps children spot errors in generative AI, and another on children’s <a href="/assets/pdf/25_idc2.pdf">mental models of AI reasoning</a>.'
+
 - title: "Presented at ISLS 2025"
   date: "June 10, 2025"
-  description: "I presented our research on <a href='/assets/pdf/25_isls.pdf'> developing an AI classification system for children </a> with the learning sciences community."
+  description: 'I presented our research on <a href="/assets/pdf/25_isls.pdf">developing an AI classification system for children</a> with the learning sciences community.'
 
 - title: "Presented at CHI 2025"
   date: "April 30, 2025"
-  description: "I presented our research on <a href='/assets/pdf/25_chi.pdf'> designing AI tools to support parents in conducting speech therapy</a>."
-
-# - title: "Selected for IDC 2025 Doctoral Consortium"
-#   date: "June 20, 2025"
-#   description: "I’ll be joining the Doctoral Consortium at IDC 2025 in Reykjavík! I’ll be sharing my dissertation research on how children interpret, resist, and collaborate with AI."
-
-# - title: "💜 UW News Feature: Teens & AI Bias"
-#   date: "Nov 21, 2024"
-#   description: "Our research on <a href='/assets/pdf/24_aies2.pdf'>representation bias of teenagers</a> in large language models was featured in <a href='https://www.washington.edu/news/2025/01/21/teens-ai-chatgpt-bias/'>UW News</a> and GeekWire!"
-
-# - title: "🧩 Poster Presentation at CERES Fall Intensive"
-#   date: "Sep 2024"
-#   description: "Presented a poster on making AI learning more engaging for children through interactive play."
-
-
+  description: 'I presented our research on <a href="/assets/pdf/25_chi.pdf">designing AI tools to support parents in conducting speech therapy</a>.'
